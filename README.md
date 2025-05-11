@@ -1,12 +1,42 @@
-# React + Vite
+# 🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and modern weather application built using **React**, **Redux Toolkit**, and **Tailwind CSS v4**. This app fetches real-time weather data from the **OpenWeatherMap API**, giving users instant updates about current weather conditions in any city.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Search for any city worldwide  
+- 🌡️ Live temperature, humidity, wind speed, and weather condition  
+- 📱 Fully responsive and mobile-first design  
+- 🎨 Modern UI powered by Tailwind CSS v4  
+- 🧠 State management using Redux Toolkit  
+- ⚡ Fast and lightweight with Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+> *(Add screenshots or demo GIFs here if available)*
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Redux Toolkit**
+- **Tailwind CSS v4**
+- **Vite**
+- **OpenWeatherMap API**
+
+---
+
+## 🔧 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/sabbehhassan/WeatherForeCasta_App
+cd WeatherForeCast_App
+npm install
+npm run dev
