@@ -2,9 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const WeatherCard = () => {
-  const { data, loading, error } = useSelector((state) => state.weather);
+  const { data, isWeatherLoading, error } = useSelector((state) => state?.weather);
 
-  if (loading) return <p className="text-center">Loading...</p>;
+  if (isWeatherLoading) return <p className="text-center">Loading...</p>;
   if (error) return <p className="text-center text-red-500">{error}</p>;
   if (!data) return null;
 
@@ -20,11 +20,12 @@ const WeatherCard = () => {
 
   return (
     <div className="text-center bg-sky-100 rounded-xl p-6 shadow-lg">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">{data.name}</h2>
+      {data?.name && <h2 className="text-2xl font-semibold text-gray-800 mb-2"> {data?.name}</h2>}
+      
       
       {/* Weather Icon */}
       <img
-        src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+        src={`http://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`}
         alt={data.weather[0].description}
         className="mb-2 mx-auto"
       />
